@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>
+        Your download should start automatically. If not,
+        <a
+          href="assets/[ React ] Mohammed Murshid KK.pdf"
+          download="[React]_Mohammed_Murshid_KK.pdf"
+        >
+          click here
+        </a>
+        to download.
+      </p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const link = document.createElement("a");
+        link.href = "assets/[ React ] Mohammed Murshid KK.pdf";
+        link.download = "[React]_Mohammed_Murshid_KK.pdf";
+        link.click();
+      });
+    </script>
+  </body>
+</html>
